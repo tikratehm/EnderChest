@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.tikrate.enderchest'
+version = '1.0'
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    flatDir {
+        dirs 'libs' // Добавляем папку с локальными JAR-файлами
+    }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    compileOnly name: 'PlayerPoints' // Подключаем PlayerPoints.jar как зависимость
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+}
+
+test {
+    useJUnitPlatform()
+}
