@@ -1,7 +1,0 @@
-com/tikrate/enderchest/EnderConfig.java
- com.tikrate.enderchest.EnderConfig
- com.tikrate.enderchest.EnderConfig$1
-com/tikrate/enderchest/EnderUpgrade.java
- com.tikrate.enderchest.EnderUpgrade
-com/tikrate/enderchest/EnderStorage.java
- com.tikrate.enderchest.EnderStorage
